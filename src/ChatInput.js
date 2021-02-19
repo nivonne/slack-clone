@@ -7,7 +7,7 @@ import firebase from 'firebase';
 
 function ChatInput({channelName, channelId}) {
     const [input, setInput] = useState("");
-    const [{user}] = useStateValue();
+    const [{ user }] = useStateValue();
     
     const sendMessage = (e) => {
         e.preventDefault();
@@ -18,10 +18,8 @@ function ChatInput({channelName, channelId}) {
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
                 user: user.displayName,
                 userImage: user.photoURL,
-            })
+            });
         }
-    };
-    setInput(""); 
     };
     
     return (
