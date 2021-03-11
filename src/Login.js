@@ -20,15 +20,15 @@ const [state, dispatch] = useStateValue();
             })
             .catch((error) => {
                 alert(error.message);
-            });
+            });  
     };
 
     return (
         <div className="login">
             <div className="login__container">
                 <img src="https://i.pcmag.com/imagery/reviews/07td46ju7p6lLVb0QGwc5VF-6..v_1569479844.jpg" alt=""/>
-                <h1>Sign In to Slack-Clone</h1>
-                <p>Final Project</p>
+                <h1>Welcome to Slack-Clone</h1>
+                <p>Final Project by Nadia Matus</p>
                 <Button onClick={signIn}>Sign In with Google</Button>
             </div>
         </div>

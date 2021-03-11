@@ -3,7 +3,6 @@ import "./ChatInput.css"
 import { useStateValue } from './StateProvider';
 import db from './firebase';
 import firebase from 'firebase';
-//import { Button } from '@material-ui/core'
 
 function ChatInput({channelName, channelId}) {
     const [input, setInput] = useState("");
@@ -20,6 +19,7 @@ function ChatInput({channelName, channelId}) {
                 userImage: user.photoURL,
             });
         }
+        setInput("");
     };
     
     return (

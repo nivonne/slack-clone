@@ -30,6 +30,7 @@ function Chat() {
 
     console.log(roomDetails);
     console.log("MESSAGES >>>", roomMessages);
+    
     return(
         <div className="chat">
             <div className="chat__header">
@@ -51,7 +52,7 @@ function Chat() {
                {roomMessages.map(({ message, timestamp, user, userImage }) => (
                    <Message
                         message={message}
-                        timestramp={timestamp}
+                        timestamp={timestamp}
                         user={user}
                         userImage={userImage}
                     />
